@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.top-page {
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: green;
+    color: honeydew;
+}
+
+.header-left {
+    margin-left: 30px;
+    padding: 11px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.header-left > h3 {
+    padding-left: 20px;
+}
+
+.header-right {
+    margin-right: 30px;
+    display: flex;
+    padding: 0 11px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header-link {
+    list-style: none;
+}
+
+#header-link > li {
+    width: 140px;
+    float: left;
+}
+
+#header-link > li > a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main-visual{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-visual > p{
+    font-size: 30px;
+}
+
+.slider{
+    /* スライドを表示させる画面の横幅(≒スライド１枚あたりの横幅) */
+    width: 1200px;
+    /* スライドを表示させる画面の縦幅(≒スライド１枚あたりの縦幅) */
+    height: 700px;
+    /* はみ出した要素は隠れるようにする */
+    overflow: hidden;
+    margin-top: 30px;
+    border-radius: 15%;
+}
+.slider__container{
+    /* スライドを表示する画面とスライド１枚をぴったり合わせるため設定 */
+    padding: 0;
+    margin: 0;
+    /* 子要素でfloatを利用しているため設定 */
+    overflow: hidden;
+    list-style: none;
+    /* 後ほどJSでleftプロパティを設定するため必要 */
+    position: relative;
+}
+.slider__item{
+    /* スライド１枚あたりの横幅 */
+    width: 1600px;
+    /* スライド１枚あたりの縦幅 */
+    height: 1066px;
+    /* スライドを横一列に並べる */
+    float: left;
+}
+
+hr{
+    margin-top: 15px;
+    margin: 15px auto;
+    width: 80%;
+    height: 3px;
+    background-color: darkgrey;
+    text-align: center;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 200px;
+}
+.content > a {
+    font-size: 20px;
+    text-align: center;
+    display: block;
+}
+
+.content img{
+    width: 600px;
+    height: 500px;
+    border-radius: 50%;
+}
+
+footer{
+    text-align: center;
+    background-color: rgb(6, 39, 66);
+    color: white;
+    padding: 20px 0;
+    margin-top: 100px;
+    font-size: 20px;
+}
